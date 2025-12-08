@@ -10,7 +10,7 @@ public class BookingPaymentTest {
     
     @Test
     void newBookingShouldBeUnpaid(){
-        Booking booking = new Booking();
+        Booking booking = new Booking(2);
         assertEquals(PaymentStatus.UNPAID, booking.getPaymentStatus());
     }
 }

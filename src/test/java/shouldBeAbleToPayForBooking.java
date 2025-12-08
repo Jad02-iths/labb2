@@ -10,7 +10,7 @@ public class shouldBeAbleToPayForBooking {
 
     @Test
     void shouldBeAbleToPayForBooking(){
-        Booking booking = new Booking();
+        Booking booking = new Booking(1);
         booking.pay();
         assertEquals(PaymentStatus.PAID, booking.getPaymentStatus());
     }

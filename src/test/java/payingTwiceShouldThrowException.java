@@ -11,7 +11,7 @@ public class payingTwiceShouldThrowException{
 
     @Test
     void payingTwiceShouldThrowException() {
-        Booking booking = new Booking();
+        Booking booking = new Booking(1);
         booking.pay();
         
         assertThrows(IllegalStateException.class, () -> {
